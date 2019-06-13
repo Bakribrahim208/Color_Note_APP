@@ -7,13 +7,14 @@ Color Notes is a good helper to manage your schedules and notes
 
  Key features: 
 -----------
- * Show notes as notification 
+* Show notes as notification 
 * Make alert with sound and LED and Vibration when remider fire
-* Make checklist  notes for shopping and to do list in easy way ;
-* Set reminder to your notes, no longer missing you important things;
+* Make checklist  notes for shopping and to do list in easy way .
+* Set reminder to your notes, no longer missing you important things.
 * Auto-saved. You don’t have to do anything to save them.
-* Share your notes via e-mail, SMS, and etc.;
-*Multi them 
+* Share your notes via e-mail, SMS, and etc.
+* Multi them (White , Dark them) .
+
 
 Screenshots
 -----------
