@@ -107,8 +107,7 @@ public class addNotetest extends AppCompatActivity {
             getSupportActionBar().setTitle(" Edite  Note ");
             if (note.isTrash())
             {
-                Toast.makeText(this, "isTrash", Toast.LENGTH_SHORT).show();
-                showDialogeWhenTrash();
+                 showDialogeWhenTrash();
 
             }
             add_operation=false;
@@ -172,8 +171,7 @@ public class addNotetest extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater =getMenuInflater();
         inflater.inflate(R.menu.menu,menu);
-        Toast.makeText(this, "menu", Toast.LENGTH_SHORT).show();
-         return  true;
+          return  true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -214,8 +212,7 @@ public class addNotetest extends AppCompatActivity {
             if (edtie_mode)
             {
                 // show tool bar  and enable to note
-                Toast.makeText(this, "edtie_mode"+edtie_mode, Toast.LENGTH_SHORT).show();
-                edtie_mode=false;
+                 edtie_mode=false;
                 revealToolbar();
                 bottom_bar.setVisibility(View.VISIBLE);
                 toolbar.setVisibility(View.VISIBLE);

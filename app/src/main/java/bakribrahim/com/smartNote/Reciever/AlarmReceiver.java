@@ -24,6 +24,7 @@ import bakribrahim.com.smartNote.R;
 import bakribrahim.com.smartNote.models.checklistmodel;
 import bakribrahim.com.smartNote.database.Repoistary;
 import bakribrahim.com.smartNote.ui.addNote;
+import bakribrahim.com.smartNote.ui.addNotetest;
 import bakribrahim.com.smartNote.ui.add_checklistActicity;
 import bakribrahim.com.smartNote.util.util;
 
@@ -71,7 +72,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                     c = add_checklistActicity.class;
 
                 else
-                     c = addNote.class;
+                     c = addNotetest.class;
 
                 Intent resultIntent = new Intent(context, c);
                 resultIntent.putExtra(util.Note_Extra, note);
