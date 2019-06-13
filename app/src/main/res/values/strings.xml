@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">My Note</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Note app</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="content">Content</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_favourte">Favorite</string>
+    <string name="menu_Attachment">Attachment</string>
+    <string name="menu_Reminder">Reminder</string>
+    <string name="menu_locked">locked</string>
+    <string name="menu_Archive">Archive</string>
+    <string name="menu_Trash">Trash</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="confirm_clear_Reminder_message">Are you sure you want to clear all Reminders?</string>
+    <string name="confirm_clearAllNote_message">Are you sure you want to clear all Notes?</string>
+    <string name="confirm_cleartrashNote_message">Are you sure you want to clear all Trash Notes?</string>
+    <string name="confirm_trashNote_message">Are you sure you want to Add ALL Notes TO Trash?</string>
+     <string name="confirm_clear_notifications_message">Are you sure you want to clear all notifications?</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_cancle">Cancel</string>
+    <string name="str_No">No </string>
+    <string name="Darkthem">Use Dark Them</string>
+    <string name="darkmessage">Throughout The App</string>
+    <string name="Setting">Setting</string>
+    <string name="setting_alarmsound">Enable alert sound</string>
+    <string name="setting_reminder_sound_sub">Disable this to show silent reminders</string>
+    <string name="setting_reminder_vibrate">Enable vibrations</string>
+    <string name="setting_reminder_vibrate_sub">Device will vibrate when a reminder is shown</string>
+    <string name="setting_reminder_led">Enable notification LED</string>
+    <string name="setting_reminder_led_sub">Pulse the LED if the device has one</string>
+    <string name="Note">Note</string>
+    <string name="newnote">New Note</string>
+    <string name="newchecklistnote">New Checklist Note</string>
+    <string name="notetitile">Note Title</string>
+    <string name="notecontent">Note Content</string>
+    <string name="remider">Reminder</string>
+    <string name="APPsetting">APP Setting</string>
+    <!--//menu-->
+    <string name="deleteall">Delete All Notes</string>
+    <string name="trashall">Add All Notes To Trash</string>
+
+</resources>

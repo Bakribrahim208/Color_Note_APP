@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Allnotes"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/menu_notes" />
+        <item
+            android:id="@+id/addchecklist"
+            android:icon="@drawable/ic_check_box_black_24dp"
+            android:title="Checklist Note" />
+        <item
+            android:id="@+id/nav_favourte"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/menu_favourte" />
+        <item
+            android:id="@+id/nav_Reminder"
+            android:icon="@drawable/ic_access_alarm_black_24dp"
+            android:title="@string/menu_Reminder" />
+
+        <item
+            android:id="@+id/nav_archive"
+            android:icon="@drawable/ic_archive_black_24dp"
+            android:title="@string/menu_Archive" />
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_delete_black_24dp"
+            android:title="@string/menu_Trash" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_Developer"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Contact with Developer" />
+        </menu>
+    </item>
+
+    <item  android:title="@string/Setting">
+        <menu>
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_send"
+                android:title="setting" />
+        </menu>
+    </item>
+
+</menu>

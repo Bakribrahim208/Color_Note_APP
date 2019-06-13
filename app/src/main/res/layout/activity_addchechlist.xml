@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addnotetoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="?attr/textcolor"
+            app:theme="@style/ThemeToolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Stop auto focusing the EditText -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/note_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:transitionName="card"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/edt_titile"
+                        android:layout_width="match_parent"
+                        android:layout_height="28sp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/notetitile"
+                        android:inputType="text|textCapSentences"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:transitionName="title" />
+
+                    <EditText
+                        android:id="@+id/subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:hint="subtitle"
+                        android:visibility="gone"
+                        android:inputType="text|textCapSentences"
+                        android:maxLength="40"
+                        android:textSize="16sp"
+                        android:transitionName="subtitle" />
+                          <LinearLayout
+                              android:orientation="vertical"
+                              android:id="@+id/rootLayout"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                          </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_title"
+                         />
+                    <include
+                        android:id="@+id/add_checklistView"
+                        layout="@layout/checklistitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <TextView
+                            android:id="@+id/note_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:maxLines="2"
+                            android:paddingEnd="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingStart="8dp"
+                            android:text="updated"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/note_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:maxLines="2"
+                            android:transitionName="time" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_below="@id/note_card" />
+
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="6dp"
+                android:visibility="invisible">
+
+
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:id="@+id/change_color"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="delete"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="pickColor"
+                    android:padding="16dp"
+                    app:srcCompat="@drawable/ic_colorize_black_24dp" />
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="delete"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="delete"
+                    android:padding="16dp"
+                    app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/note_toolbar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+

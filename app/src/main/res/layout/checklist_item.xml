@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.add_checklistActicity">
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+
+        android:layout_margin="8dp"
+        android:id="@+id/checkbox_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+
+        android:layout_marginTop="8dp"
+        android:id="@+id/daynmic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:inputType="textPersonName"
+        android:hint="Name" />
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<declare-styleable name="myattr">
+    <attr name="backgroundcolor" format="reference"/>
+    <attr name="textcolor" format="reference"/>
+    <attr name="cardbackgroundcolor" format="reference"/>
+    <attr name="tintcolor" format="reference"/>
+    <attr name="buttoncolor" format="reference"/>
+    <attr name="dialogepicker_accentcolor" format="reference"/>
+
+</declare-styleable>
+    
+</resources>

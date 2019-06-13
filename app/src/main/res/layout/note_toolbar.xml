@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+     android:background="?attr/backgroundcolor"
+    android:visibility="invisible">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/backgroundcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/backgroundcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/backgroundcolor" />
+
+    <TextView
+        android:id="@+id/textbar_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/note_toolbar_height"
+        android:layout_gravity="bottom"
+        android:background="#363636"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="?attr/textcolor"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:transitionName="card"
+        android:layout_gravity="bottom"
+
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:id="@+id/toolbar_note"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/note_toolbar_height"
+            android:background="?attr/backgroundcolor">
+
+            <ImageButton
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/note_toolbar_height"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:contentDescription="share"
+                android:onClick="share"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_share_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/notif_button"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/note_toolbar_height"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:contentDescription="notif"
+                android:onClick="notifBtn"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_notifications_active_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/archive_button"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/note_toolbar_height"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:contentDescription="archive"
+                android:onClick="archive"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_archive_white_24dp" />
+
+            <ImageButton
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

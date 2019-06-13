@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3d77b8</color>
+    <color name="colorPrimaryDark">#376aa4</color>
+    <color name="colorAccent">#3d77b8</color>
+      <color name="red">#ef3555</color>
+    <color name="yellow">#a78b51</color>
+    <color name="green">#4c9e82</color>
+    <color name="blue_grey">#90a4ae</color>
+     <color name="translucent">#99000000</color>
+    <color name="background_dark">#303030</color>
+    <color name="statusbar_dark">#282828</color>
+    <color name="background_light">#fafafa</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="light_gray">#dddddd</color>
+    <color name="dark_gray">#ff666666</color>
+
+    <color name="bright_pink">#FF007F</color>
+     <color name="orange">#FF7F00</color>
+     <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <array name="rainbow">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+</resources>

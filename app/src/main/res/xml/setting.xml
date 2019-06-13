@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:layout="@layout/preferaence_divider_setting"
+        app:iconSpaceReserved="false"
+        >
+
+
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:key="ThemPreferance"
+            android:title="@string/Darkthem"
+            android:summary="@string/darkmessage"
+            />
+        <Preference
+            android:selectable="true"
+            android:enabled="true"
+            android:key="Deleteallnote"
+            android:title="Delete All Note"
+            android:summary="Remove all Notes "
+            app:iconSpaceReserved="false"
+            />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            android:selectable="true"
+            android:enabled="true"
+            android:key="clearnotif"
+            android:title="clear Notifcations"
+            android:summary="Remove all notification for your notes" />
+
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="Reminders"
+        app:iconSpaceReserved="false"
+        android:layout="@layout/preferaence_divider"
+
+        >
+
+        <SwitchPreference
+             android:key="AlarmSound"
+            android:title="@string/setting_alarmsound"
+            android:summary="@string/setting_reminder_sound_sub"
+            app:iconSpaceReserved="false"
+
+            />
+
+
+        <SwitchPreference
+             android:key="alarmvibrate"
+            android:title="@string/setting_reminder_vibrate"
+            android:summary="@string/setting_reminder_vibrate_sub"
+            app:iconSpaceReserved="false"
+
+            />
+
+        <SwitchPreference
+             android:key="alarmLed"
+             android:title="@string/setting_reminder_led"
+            android:summary="@string/setting_reminder_led_sub"
+            app:iconSpaceReserved="false"
+
+            />
+
+
+
+    </PreferenceCategory>
+    <Preference
+        android:selectable="true"
+        android:enabled="true"
+        android:key="clearReminder"
+        android:title="clear All Reminders"
+        android:summary="Remove all Reminders for your notes"
+        app:iconSpaceReserved="false"
+        />
+</PreferenceScreen>
