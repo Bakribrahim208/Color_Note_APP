@@ -5,6 +5,10 @@
 when you write notes, to-do lists and  shopping lists,
 Color Notes is a good helper to manage your schedules and notes
 
+Demo
+-----------
+* [google store ](https://play.google.com/store/apps/details?id=bakribrahim.com.smartNote) 
+
  Key features: 
 -----------
 * Show notes as notification 
